@@ -19,7 +19,7 @@ const Cards = () => {
       }
     }, [isInView]);
   return (
-    <>
+    <div className="max-w-screen overflow-x-hidden font-poppins">
       <div className="w-full py-[10rem] px-4 bg-white ">
         <div className="flex justify-center ">
           <h2 class="text-3xl font-bold tracking-tight text-center sm:text-5xl mt-[-6%] text-black">
@@ -33,9 +33,7 @@ const Cards = () => {
         {width < 631 ? (
           <>
             <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8">
-              <div
-                
-              >
+              <div>
                 <CardComponent
                   buttonTextColor={"text-white"}
                   image={Growth}
@@ -57,9 +55,7 @@ const Cards = () => {
                   iconColor6={"text-green-200"}
                 />
               </div>
-              <div
-
-              >
+              <div>
                 <CardComponent
                   standOutBg={"bg-blue-100/20"}
                   marginMiddle={"md:my-6"}
@@ -82,9 +78,7 @@ const Cards = () => {
                   iconColor6={"text-green-200"}
                 />
               </div>
-              <div
-
-              >
+              <div>
                 <CardComponent
                   buttonTextColor={"text-white"}
                   buttonBG={"bg-[#4D4D4D]"}
@@ -211,7 +205,7 @@ const Cards = () => {
         )}
       </div>
       <div className="bg-gradient-to-r from-sky-500 to-indigo-500 h-[2px] w-[70%]"></div>
-    </>
+    </div>
   );
 };
 

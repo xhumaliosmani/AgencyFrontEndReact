@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <>
+    <div className="max-w-screen overflow-x-hidden font-poppins">
       <section className="">
         <div class="relative px-6  sm:px-14 bg-[#e0e0e0] pt-[120px] pb-[110px] lg:pt-[150px]">
           <div class="container mx-auto">
@@ -24,7 +24,9 @@ const HeroSection = () => {
                   >
                     <h1 class="text-transparent font-extrabold bg-clip-text bg-gradient-to-r to-emerald-600 from-blue-400 text-[3rem]">
                       Here you can <br />{" "}
-                      <span className="text-8xl">Level Up Your Business</span>
+                      <span className="sm:text-8xl text-6xl">
+                        Level Up Your Business
+                      </span>
                     </h1>
                   </motion.div>
                   <motion.div
@@ -166,7 +168,7 @@ const HeroSection = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

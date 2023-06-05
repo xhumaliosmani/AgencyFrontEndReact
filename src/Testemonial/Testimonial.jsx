@@ -18,7 +18,7 @@ const Testimonial = () => {
     }
   }, [isInView]);
   return (
-    <div className="mb-[-33px] mt-[-32px]">
+    <div className="mb-[-33px] mt-[-32px] max-w-screen overflow-x-hidden font-poppins">
       <section className="my-8 bg-white pb-10 pt-4">
         <motion.div
           ref={ref}

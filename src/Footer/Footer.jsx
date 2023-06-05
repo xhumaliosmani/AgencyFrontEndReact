@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <>
+    <div className="max-w-screen overflow-x-hidden font-poppins">
       <div className="bg-gradient-to-r from-sky-500 to-indigo-500 h-[2px] w-[70%]"></div>
       <div className="sm:flex justify-between py-10 px-8 grid bg-gray-900">
         <div className="text-white ">
@@ -86,7 +86,7 @@ const Footer = () => {
             </div>
           </div>
         </div> */}
-        <div className="lg:col-span-3 flex justify-between w-auto ml-[-36%] sm:ml-0 sm:mb-0 mb-4">
+        <div className="lg:col-span-3 flex justify-between max-w-screen ml-[-40%] sm:ml-0 sm:mb-0 mb-4">
           <div className="pr-4">
             <h6 className="font-medium text-blue-400">Solutions</h6>
             <ul>
@@ -159,7 +159,7 @@ const Footer = () => {
           All Rights Reserved 2023 - LevelUp Solutions
         </p>
       </div>
-    </>
+    </div>
   );
 };
 export default Footer;

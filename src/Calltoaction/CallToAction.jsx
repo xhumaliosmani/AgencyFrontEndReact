@@ -22,7 +22,7 @@ const CallToAction = () => {
 
 
   return (
-    <>
+    <div className="max-w-screen overflow-x-hidden font-poppins">
       <section class="py-20 lg:py-[50px] bg-[#e9e9e9]">
         <div class="container mx-auto">
           <div class="bg-[#5F6F94] relative z-10 overflow-hidden rounded py-12 px-8 md:p-[70px]">
@@ -143,7 +143,7 @@ const CallToAction = () => {
         </div>
       </section>
       <div className="bg-gradient-to-r flex justify-end ml-[30%] from-sky-500 to-indigo-500 h-[2px] w-[70%]"></div>
-    </>
+    </div>
   );
 };
 

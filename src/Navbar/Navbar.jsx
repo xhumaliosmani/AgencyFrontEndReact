@@ -8,7 +8,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <>
+    <div className="max-w-screen overflow-x-hidden font-poppins">
       <nav class="bg-white dark:bg-gray-900 fixed sm:w-full w-screen z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto sm:p-4 pb-2">
           <Link to="/" class="flex items-center">
@@ -93,21 +93,13 @@ const Navbar = () => {
                   Contact
                 </a>
               </li>
-              <li>
-                <a
-                  href="features"
-                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  Features
-                </a>
-              </li>
             </ul>
           </div>
         </div>
 
         {/* mobile drawer */}
 
-        <div className={`${open ? null : "hidden"}  h-[21rem]`}>
+        <div className={`${open ? null : "hidden"}  h-[17rem]`}>
           <ul>
             <li className="text-white hover:text-blue-500/60 font-semibold pl-8 cursor-pointer pb-4 pt-6">
               <a href="/">Home</a>
@@ -121,15 +113,16 @@ const Navbar = () => {
             <li className="text-white hover:text-blue-500/60 font-semibold pl-8 cursor-pointer pb-4">
               <a href="contact">Contact</a>
             </li>
-            <li className="text-white hover:text-blue-500/60 font-semibold pl-8 cursor-pointer pb-4">
-              <a href="features">Features</a>
-            </li>
           </ul>
           <div className="bg-gray-200 h-[1px] w-[87%] ml-4 "></div>
           {/* profile */}
           <div className="">
             <div className=" flex cursor-pointer">
-              <img className="w-14 ml-8 mt-4 flex" alt="alt" src={profileImage} />
+              <img
+                className="w-14 ml-8 mt-4 flex"
+                alt="alt"
+                src={profileImage}
+              />
 
               <p className="my-auto ml-4 text-white font-semibold ">Sam</p>
               <p className="my-auto ml-2 text-white font-semibold ">Smith</p>
@@ -140,7 +133,7 @@ const Navbar = () => {
           </div>
           <div className="flex justify-end">
             <div className="mt-[-42px]">
-              <button className="text-white font-semibold border rounded-xl py-2 px-4 mr-16 hover:bg-gray-100/10 hover:border-blue-300">
+              <button className="text-white font-semibold border rounded-xl py-2 px-4 mr-8 hover:bg-gray-100/10 hover:border-blue-300">
                 Logout
               </button>
             </div>
@@ -156,7 +149,7 @@ const Navbar = () => {
           </p>
         </div>
       </nav>
-    </>
+    </div>
   );
 };
 

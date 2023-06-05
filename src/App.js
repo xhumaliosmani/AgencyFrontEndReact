@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter , Routes, Route, Link } from "react-router-dom";
-import Navbar from "./Navbar/Navbar";
 import Homepage from "./Homepage/Homepage";
-import Footer from "../src/Footer/Footer";
 import About from "../src/pages/about/About";
+import Services from "./pages/services/Services";
+import Contact from "./pages/contact/Contact";
 
 function App() {
   return (
@@ -11,6 +11,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );

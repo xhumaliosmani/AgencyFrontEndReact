@@ -32,7 +32,7 @@ const Features = () => {
   // }, []);
 
   return (
-    <div>
+    <div className="max-w-screen overflow-x-hidden font-poppins">
       <div className="bg-gradient-to-r from-sky-500 to-indigo-500 h-[2px] w-[70%]"></div>
       {width < 631 ? (
         <section class="">
